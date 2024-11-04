@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA-Express-Server-Application</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Express App</h1>
+        <p>Simple One Page Application</p>
+        <h2>Available Routes:</h2>
+        <ul>
+            <li><a href="/users">Users</a></li>
+            <li><a href="/post">Posts</a></li>
+            <li><a href="/comments">Comments</a></li>
+        </ul>
+        <h2>Create Post</h2>
+        <form id="post-form">
+            <input type="text" id="post-title" placeholder="Post Title" required>
+            <textarea id="post-content" placeholder="Post Content" required></textarea>
+            <button type="submit">Create Post</button>
+        </form>
+
+        <!-- <h2>Existing Posts</h2> -->
+        <div id="posts-list"></div>
+
+        <!-- <div id="comments"></div>
+        <h2>Add a Comment</h2>
+        <form id="commentForm">
+            <textarea id="content" placeholder="Enter your comment" required></textarea><br>
+            <input type="hidden" id="postId" value="1"> 
+            <input type="hidden" id="userId" value="1">
+            <button type="submit">Submit</button>
+        </form>
+    </div> -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
